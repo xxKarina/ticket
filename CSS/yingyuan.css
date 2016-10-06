@@ -1,0 +1,400 @@
+
+* {
+	 margin: 0; 
+	 padding: 0; 
+	}
+#container { 
+    margin:0 auto;
+    background:  url(../images/2.png) repeat-x;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+  }
+
+#div1 {  
+    width: 75%;
+    height: 15px;
+    margin:0 auto;
+  }
+
+#header {
+  width: 100%;
+  height: 60px;
+  background: white;
+  margin:30px auto;
+  margin-bottom: 0;
+}
+#header .add {
+    background: url(../images/4.png) no-repeat 75% 35%; 
+    position:relative; 
+    width: 85px; 
+    height: 50px; 
+    margin:0 22%;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 18px; 
+}
+#header .a1,.a2,.a3 {
+      position: absolute;
+      top:62px;
+      font-size: 28px;
+      width: 85px; 
+      height: 50px;  
+      cursor: pointer;
+      font-weight: 900;
+}
+
+.a1 a {color:red;}
+.a3 a:hover,.a1 a:hover,.a2 a:hover {color: red;}
+.a3 a,.a2 a{
+  color: black;
+  text-decoration: none;  
+}
+#header .active { color: red; }
+
+#header .a1 {margin-left: 35%; text-decoration: underline;}
+#header .a2 {margin-left: 45%;}
+#header .a3 {margin-left: 55%;}
+
+#header .a_ul {
+      display: none;
+      position: absolute;
+      top: 60px; 
+      left:10px; 
+      background: #FBF7E1; 
+      width: 400px; 
+      height: 200px; 
+      border: 1px solid #999; 
+      padding: 10px 0 0 0;
+      z-index: 2;
+}
+ .a_ul a:hover {
+
+      background: #fc0 url(../images/5.png)no-repeat left center;
+  }
+#header ul li {
+      height: 25px; 
+      width: 100px;
+      line-height: 25px; 
+      text-indent: 20px; 
+      letter-spacing: 1px;
+}
+
+#header .logo {
+      position: absolute;
+      top:60px;
+      margin-left: 15%;
+      width: 100px; 
+      height: 30px; 
+      cursor: pointer;
+}
+
+#div1 .member {
+     position:relative; 
+     width: 85px; 
+     height: 30px; 
+     float: right; 
+     background: url(../images/4.png) no-repeat right center; 
+     line-height: 30px; 
+     cursor: pointer;
+}
+#div1 ul { 
+      display: none;  
+      position: absolute;
+      top: 30px; left:-10px; 
+      background: #FBF7E1; 
+      width: 100px; 
+      height: 120px; 
+      border: 1px solid #999; 
+      border-top: none; 
+      padding: 10px 0 0 0;
+      z-index: 2;
+}
+.a_ul {
+  height: 300px; 
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+.a_ul li { 
+  height: 300px; 
+  list-style-type: none; 
+  z-index: 1; 
+  float: left;
+}
+.a_ul li a:hover { 
+      background: #fc0 url(../images/5.png)no-repeat left center;
+}
+#div1 ul li { 
+      list-style-type: none; 
+      height: 25px; 
+      width: 100px;
+      line-height: 25px; 
+      text-indent: 20px; 
+      letter-spacing: 1px;
+}
+#div1 ul li a { 
+      display:block; 
+      text-decoration: none; 
+      background: url(../images/7.png)no-repeat left center; 
+}
+#div1 ul li a:hover { 
+      background: #fc0 url(../images/5.png)no-repeat left center;
+}
+
+#div1 .logo { 
+      width: 100px; 
+      height: 30px; 
+      float:left; 
+}
+#div1 .logo img {
+      display: block;
+      margin-top: 5px;
+}
+#div1 .login { 
+      float: right; 
+      width: 45px; 
+      height: 30px; 
+      line-height: 30px; 
+      cursor: pointer;
+}
+#login { 
+  display: none;
+  position:absolute; 
+  width: 350px; 
+  height: 250px; 
+  border:1px solid #ccc; 
+  z-index: 9999; 
+  background: #fff;
+}
+#login h2 { 
+  cursor: move; 
+  height: 40px; 
+  line-height: 40px; 
+  text-align: center; 
+  font-size: 14px; 
+  letter-spacing:1px; 
+  color: #666; 
+  background: url(../images/2.png)repeat-x; 
+  margin: 0; padding: 0; 
+  border: 1px solid #ccc; 
+  margin: 0 0 20px 0;
+}
+#login h2 img { 
+  width: 30px;
+  float: right; 
+  position: relative; 
+  top: 0px; 
+  right:0px; 
+  cursor: pointer; 
+}
+#login div.user,#login div.pass { 
+  font-size: 14px; 
+  color: #666; 
+  padding: 5px 0; 
+  text-align: center;
+}
+#login input.text { 
+  width: 200px; 
+  height: 25px; 
+  border: 1px solid #ccc; 
+  background: #fff; 
+  font-size: 14px;
+}
+#login .button { 
+  text-align: center; 
+  padding: 20px 0; 
+}
+#login input.submit { 
+  width: 107px; 
+  height: 30px; 
+  background: url(../images/6.png)no-repeat; 
+  border: none;
+  cursor: pointer;
+}
+#login .other { 
+  text-align: right; 
+  padding: 15px 10px; 
+  color: #666;
+}
+
+#div5 {
+      width: 75%;
+      height: 140px;
+      background: gray;
+      margin:0 auto;
+      text-align: center;
+      line-height: 140px;
+      letter-spacing: 1px;
+  }
+  #div5 div {
+    float: left;
+    width: 300px;
+    height: 110px;
+    margin: 20px;
+    margin-right: 0;
+    cursor: pointer;
+  }
+   #div5 a {
+    margin: 20px;
+    margin-left: 
+  }
+  #screen { 
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background: #000; 
+    z-index: 9998; 
+    filter: alpha(opacity:30); 
+    opacity: 0.3;
+  }
+#div2 {
+  width: 75%;
+  height: 50px;
+  padding: 10px;
+  margin:0 auto;
+}
+.p1 {
+  width: 20%;
+  height: 100%;
+  line-height: 50px;
+  float: left;
+}
+.p2 {
+  width: 33%;
+  height: 100%;
+  line-height: 50px;
+  float: right;
+  color: #999;
+
+}
+#div3 {
+  width: 75%;
+  height:2000px;
+  margin:0 auto;
+  position: relative;
+}
+#yy {
+  width: 65%;
+  height: 100%;
+}
+#search {
+  width: 100%;
+  height:10%;
+  background: #F4A460;
+}
+.s1{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.s1 p {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+.s2 {
+  width: 75%;
+  height: 100%;
+  float: right;
+  background:#FFDAB9;
+}
+.s2 ul {
+  width: 100%;
+  height: 70%;
+}
+.s2 ul li {
+  width: 12%;
+  height: 20%;
+  float:left;
+  margin-left:7%;
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 30px;
+  overflow: hidden;
+}
+#txt {
+  width: 40%;
+  height: 18%;
+  margin-left: 3%;
+  color:#999;
+}
+.s2 p {
+  width: 12%;
+  height: 20%;
+  float: right;
+  margin-right:44%;
+  background: url(../images/btn.png);
+}
+#all {
+  width: 100%;
+  height: 5%;
+  overflow: hidden;
+  background: gray;
+}
+#ul {
+  width: 99%;
+  height: 80%;
+  overflow: hidden;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+#ul ul {
+  width: 100%;
+  height: 100%;
+}
+#ul ul li {
+  width: 100%;
+  height: 9.9%;
+  list-style-type: none;
+  border-bottom:1px dashed #999;
+}
+#ul ul li img {
+  width: 30%;
+  height: 80%;
+  padding: 2%
+}
+#ul ul li a {
+  float: right;
+  margin: 60px 9%;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+#ul .span {
+  display: inline-block;
+  width: 150%;
+  height: 30px; 
+  background: red;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10%;
+}
+#disp {
+  width: 99%;
+  height: 4%;
+  margin: 1% 0.5%;
+  border-radius: 2%;
+  background: #CCC;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+#gj {
+  width: 35%;
+  height: 300px;
+  background: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+  
+

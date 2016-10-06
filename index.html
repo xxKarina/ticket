@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="CSS/chat.css">
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<link rel="stylesheet" type="text/css" href="CSS/index1.css">
+	<link rel="stylesheet" type="text/css" href="CSS/center_wrap.css">
+	<script src="JS/chat.js"></script>
+	<script src="JS/move.js"></script>
+	<script src="JS/tool.js"></script>
+	<script src="JS/base.js"></script>
+	<script src="JS/index1.js"></script>
+	<script>
+            // 实现copy功能
+            function copy(){
+                var x=document.getElementsByClassName("put_text")[0].value;
+                document.getElementsByClassName("show_text")[0].value += x+'\n';
+            	document.getElementsByClassName("put_text")[0].value=null;
+            }
+	</script>
+</head>
+	<body id="body">
+		 <div id="container">
+			<div id="div1">
+				 <div class="logo"><img src="./images/1.png" alt=""/></div>
+
+				 <div id="chat">
+				 	<img src="images/chat.png" alt="">
+				 </div>
+				 <div id="show_chat">聊天</div>
+				 <div id="send_info">
+				 	<h2><img src="images/close.png" alt="" class="close" name="close">聊天</h2> 
+				 	<div class="show" ><textarea class="textarea show_text" readonly="readonly"></textarea></div>
+				 	<div class="put"><textarea class="textarea put_text"></textarea></div>
+				 	<div class="button"><input onclick="copy();" type="button" class="submit" value="发送"></div>
+				 </div>
+
+				<div class="member">个人中心
+					<ul class="member_ul">
+						<li><a href="###" title="">设置</a></li>
+						<li><a href="###" title="">换肤</a></li>
+						<li><a href="###" title="">帮助</a></li>
+						<li><a href="###" title="">退出</a></li>
+					</ul> 
+				</div>
+				<div class="login">登录</div>
+			</div>
+			<div id="login">
+				<h2><img src="./images/9.png" alt="" class="close">网站登录</h2> 
+				<div class="user">账号： <input type="text" name="user" class="text"></div>
+				<div class="pass ">密码： <input type="password" name="pass" class="text"></div>
+				<div class="button "><input type="button" class="submit" value=""></div>
+				<div class="other">注册新用户|忘记密码？</div>
+			</div>
+			<div id="screen"></div>
+			<div id="header">
+				<div class="logo"><img src="./images/01.png" alt=""/></div>
+			    <div class="add">湛江
+					<ul class="a_ul">
+							<li><a href="##" title="">湛江</a></li>
+							<li><a href="##" title="">北京</a></li>
+							<li><a href="##" title="">上海</a></li>
+							<li><a href="##" title="">天津</a></li>
+							<li><a href="##" title="">湛江</a></li>
+							<li><a href="##" title="">北京</a></li>
+							<li><a href="##" title="">上海</a></li>
+							<li><a href="##" title="">天津</a></li>
+							<li><a href="##" title="">湛江</a></li>
+							<li><a href="##" title="">北京</a></li>
+							<li><a href="##" title="">上海</a></li>
+							<li><a href="##" title="">天津</a></li>
+							<li><a href="##" title="">湛江</a></li>
+							<li><a href="##" title="">北京</a></li>
+							<li><a href="##" title="">上海</a></li>
+							<li><a href="##" title="">天津</a></li>
+							<li><a href="##" title="">湛江</a></li>
+							<li><a href="##" title="">北京</a></li>
+							<li><a href="##" title="">上海</a></li>
+							<li><a href="##" title="">天津</a></li>
+							<li><a href="##" title="">湛江</a></li>
+							<li><a href="##" title="">北京</a></li>
+							<li><a href="##" title="">上海</a></li>
+							<li><a href="##" title="">天津</a></li>
+					</ul>
+				</div>
+				<div class="a1"><a class="test" href="index.html" title="">首页</a></div>
+				<div class="a2"><a class="test" href="yingpian.html" title="">影片</a></div>
+				<div class="a3"><a class="test" href="yingyuan.html" title="">影院</a></div>
+			</div>
+			<div id="div2">
+				<div id="box">
+				<div>
+					<ul>
+						<li><img src="images/LF1.png" alt=""></li>
+						<li><img src="images/LF2.png" alt=""></li>
+						<li><img src="images/LF3.png" alt=""></li>
+						<li><img src="images/LF4.png" alt=""></li>
+					</ul>
+				</div>
+				<div>
+					<ol>
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+			<div id="div3">
+				<div id="button1" style="cursor:pointer;">正在热映</div>
+				<div id="button2" style="cursor:pointer;">即将上映</div>
+				<div class="show" style="cursor:pointer;"><a href="#" title="">查看全部</a></div>
+			</div>
+			<div id="tf">
+					<div class="three">
+						<div class="t" >
+							<img src="images/l1.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l2.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l3.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l4.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l5.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l6.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+				</div>
+					<div id="four">
+						<div class="four">
+						<div class="t" >
+							<img src="images/l1.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+							<div class="t" >
+							<img src="images/l2.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l3.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l4.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l5.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l6.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l1.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l2.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l3.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l4.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l5.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						<div class="t" >
+							<img src="images/l6.png" alt="" width="150" height="295">
+							<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="three1">
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+					</div>
+					<div id="four1">
+						<div class="four1">
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+						</div><div class="four1">
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l8.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+							<div class="t" >
+								<img src="images/l7.png" alt="" width="150" height="295">
+								<div class="t1">
+								<span>导演：保罗·格林格拉斯</span>
+								<span>主演：马特·达蒙,艾丽西卡·维坎德,朱丽娅·斯蒂尔斯,汤米·李·琼斯,文森·卡索</span>
+								<span>类型：动作 冒险 悬疑</span>
+								<span>地区：美国</span>
+								<span>语言：英语</span>
+								<span>片长：124分钟</span>
+							</div>
+							</div>
+					</div>
+				</div>
+					<div class="h"></div>
+			<div class="center_wrap" id="div44">
+		<div class="home_toplist">
+			<div class="home_toplist_item">
+				<div class="movie_weeklist">
+					<h5>
+						<span>上周票房排行</span>
+						<a class="more" href="#">全部影片 ></a>
+					</h5>
+					<ul class="weeklist M_weeklist">
+						<li class="current">
+							<i class="i_1"></i>
+							<span class="poster">
+								<a href="#">
+									<img style="width:120px; height:90px;" src="images/l4.png">
+								</a>
+							</span>
+							<a class="name" href="#">谍影重重5</a>
+							<span class="rating">8.2</span>
+							<span class="buynow">
+								<a class="buy" href="#">选座购票</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_2"></i>
+							<span class="poster">
+								<a href="#">
+									<img style="width:120px; height:90px;" src="images/l4.png">
+								</a>
+							</span>
+							<a class="name" href="#">冰川时代5：星际碰撞</a>
+							<span class="rating">8.7</span>
+							<span class="buynow">
+								<a class="buy" href="#">选座购票</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_3"></i>
+							<span class="poster">
+								<a href="#">
+									<img style="width:120px; height:90px;" src="images/l4.png">
+								</a>
+							</span>
+							<a class="name" href="#">使徒行者</a>
+							<span class="rating">9.0</span>
+							<span class="buynow">
+								<a class="buy" href="#">选座购票</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_4"></i>
+							<span class="poster">
+								<a href="#">
+									<img style="width:120px; height:90px;" src="images/l4.png">
+								</a>
+							</span>
+							<a class="name" href="#">星际迷航3：超越星辰</a>
+							<span class="rating">8.9</span>
+							<span class="buynow">
+								<a class="buy" href="#">选座购票</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_5"></i>
+							<span class="poster">
+								<a href="#">
+									<img style="width:120px; height:90px;" src="images/l4.png">
+								</a>
+							</span>
+							<a class="name" href="#">我们诞生在中国</a>
+							<span class="rating">9.1</span>
+							<span class="buynow">
+								<a class="buy" href="#">选座购票</a>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="home_toplist_item">
+				<div class="movie_cinemalist title_wrap">
+					<h5>
+						<span>热门影院排行</span>
+						<a class="more" href="#">全部影院 ></a>
+					</h5>
+					<ul class="cinemalist M_cinemalist">
+						<li class="current">
+							<i class="i_1"></i>
+							<a class="name" href="#">大地影院湛江悦都汇广场店</a>
+							<span class="address">人民大道北6号南国豪苑商场四楼大地影院</span>
+							<span class="buynow">
+								<a class="seat" href="#">选座</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_2"></i>
+							<a class="name" href="#">大地影院湛江赤坎兴华海之城</a>
+							<span class="address">赤坎区海北路11_31号兴华海之城三楼</span>
+							<span class="buynow">
+								<a class="seat" href="#">选座</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_3"></i>
+							<a class="name" href="#">吴川华影国际影城</a>
+							<span class="address">广东省湛江吴川市梅录同德城首层华影国际影城</span>
+							<span class="buynow">
+								<a class="seat" href="#">选座</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_4"></i>
+							<a class="name" href="#">廉江永福影院</a>
+							<span class="address">廉江市广场二路永福御景城二楼</span>
+							<span class="buynow">
+								<a class="seat" href="#">选座</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_5"></i>
+							<a class="name" href="#">天润国际影城</a>
+							<span class="address">湛江市赤坎区中山一路2号湛江世贸大厦第四层</span>
+							<span class="buynow">
+								<a class="seat" href="#">选座</a>
+							</span>
+						</li>
+						<li class="">
+							<i class="i_6"></i>
+							<a class="name" href="#">大地影院--湛江廉江百信店</a>
+							<span class="address">廉江市石城镇百信国际广场4楼</span>
+							<span class="buynow">
+								<a class="seat" href="#">选座</a>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="home_toplist_item">
+				<div class="movie_custlist title_wrap">
+					<h5>
+						<span>热销团购</span>
+					</h5>
+					<div class="error_wrap">
+						<div class="title">暂无团购信息</div>
+						你可以查看
+						<a href="#">全部影院</a>
+						或者
+						<a href="#">全部影片</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<div class="center_wrap" id="div4">
+		<div class="movie_guide" data_spm="w6">
+			<h3 class="movie_guide_info">新片观影指南</h3>
+			<div class="movie_calender" style="opacity: 1;">
+				<div class="movie_calender_header">
+					<div class="movie_calender_month">
+						<em class="movie_ctrl_prev M_head_prev disable"><</em>
+						<span class="movie_ctrl_show M_head_show">2016年8月</span>
+						<em class="movie_ctrl_next M_head_next">></em>
+					</div>
+					<ul class="movie_calender_week">
+						<li>周日</li>
+						<li>周一</li>
+						<li>周二</li>
+						<li>周三</li>
+						<li>周四</li>
+						<li>周五</li>
+						<li>周六</li>
+					</ul>
+				</div>
+				<ul class="movie_calender_main M_calender_main">
+					<li></li>
+					<li>01</li>
+					<li>02</li>
+					<li>03</li>
+					<li>04</li>
+					<li>05</li>
+					<li>06</li>
+					<li>07</li>
+					<li>08</li>
+					<li>09</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+					<li>15</li>
+					<li>16</li>
+					<li>17</li>
+					<li>18</li>
+					<li>19</li>
+					<li>20</li>
+					<li>21</li>
+					<li>22</li>
+					<li>23</li>
+					<li>24</li>
+					<li>25</li>
+					<li>26</li>
+					<li>27</li>
+					<li>28</li>
+					<li>29</li>
+					<li>30</li>
+					<li>31</li>
+				</ul>
+			</div>
+			<div class="movie_post M_post" style="opacity: 1;">
+				<div class="movie_post_main">
+					<a href="#" target="_blank">
+						<img class="movie_post_img M_post_img" src="">
+						<div class="movie_post_mask"></div>
+						<ul class="movie_post_mask_list M_post_mask_list">本月暂无新片上映</ul>
+						<h3 class="movie_post_mask_info M_post_mask_info">
+							<span class="movie_name "></span>
+							<span class="movie_rank" style="display: none;">
+								★★★★★
+								<i class="M_post_rank">★★★★★</i>
+							</span>
+						</h3>
+					</a>
+				</div>
+				<div class="movie_post_footer">
+					<em class="prev M_post_prev disable"><</em>
+					<span class="day_info M_post_day_info">本月暂无新片上映</span>
+					<em class="next M_post_next disable">></em>
+				</div>
+			</div>
+		</div>
+		<div class="movie_recent">
+			<h3 class="movie_guide_info">热门预告片</h3>
+			<ul class="movie_recent_ul">
+				<li class="movie_recent_item">
+					<a href="#">
+						<img class="movie_recent_item_post" width="140" height="80" src="images/l4.png">
+						<img class="movie_video_icon" src="images/start.png">
+						<p>谍影重重5</p>
+					</a>
+				</li>
+				<li class="movie_recent_item">
+					<a href="#">
+						<img class="movie_recent_item_post" width="140" height="80" src="images/l4.png">
+						<img class="movie_video_icon" src="images/start.png">
+						<p>冰川时代5：星际碰撞</p>
+					</a>
+				</li>
+				<li class="movie_recent_item">
+					<a href="#">
+						<img class="movie_recent_item_post" width="140" height="80" src="images/l4.png">
+						<img class="movie_video_icon" src="images/start.png">
+						<p>星际迷航3：超越星辰</p>
+					</a>
+				</li>
+				<li class="movie_recent_item">
+					<a href="#">
+						<img class="movie_recent_item_post" width="140" height="80" src="images/l4.png">
+						<img class="movie_video_icon" src="images/start.png">
+						<p>惊天绑架团</p>
+					</a>
+				</li>
+				<li class="movie_recent_item">
+					<a href="#">
+						<img class="movie_recent_item_post" width="140" height="80" src="images/l4.png">
+						<img class="movie_video_icon" src="images/start.png">
+						<p>在世界中心呼唤爱</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="div5">
+		<div class="footBottom">
+			<img class="img_logo" src="./images/01.png" alt="">
+			<img class="img" src="images/footer_doll.png" width="100px" height="100px;">
+			<div class="footer-a">
+				<a href="" title="">关于我们</a>
+				<a href="" title="">加入我们</a>
+				<a href="" title="">联系我们</a>
+				<a href="" title="">影院公告</a>
+			</div>
+		</div>
+	</div>
+			<div class="return top">
+				<a href="#top" title="">
+					<p>顶部</p>
+				</a>
+			</div>
+			<div class="return bottom">
+				<a href="#bottom" title="">
+					<p>底部</p>
+				</a>
+			</div>
+			<div id="footer">
+				<p class="p1">本程序执行耗时为：</p>
+				<p>版权所有 翻版必究</p>
+				<p>本程序由<span>广东海洋大学</span>提供3473262769@qq.com</p>
+			</div>
+	</div>
+	<a name="bottom"></a>
+	</body>
+</html>

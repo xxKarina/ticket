@@ -1,0 +1,12 @@
+@CHARSET 'UTF-8';
+#member_main table{
+    width:90%;
+    margin:10px auto;
+    text-align: center;
+    background: #ccc;
+}
+#member_main table th,#member_main table td{
+    height:25px;
+    line-height:25px;
+    background: #fff;
+}

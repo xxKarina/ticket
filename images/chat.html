@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+</head>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		#chat{
+			width: 23px;
+			height: 23px;
+			float: right;
+			margin:200px 10px 0 0;
+		}
+		#chat:hover{
+			background: #ccc;
+		}
+		#show_chat{
+			display: none;
+			width: 50px;
+			height: 20px;
+			background: #999;
+			float: right;
+			margin:200px 6px 0 0;
+			text-align: center;
+			line-height: 18px;
+		}
+		#send_info { 
+			  display: none;
+			  position:absolute; 
+			  top:150px;
+			  left:500px;
+			  width:550px;
+			  height:402px; 
+			  border:1px solid black; 
+		}
+		#send_info h2{
+			cursor: move; 
+		  	height: 30px; 
+		  	line-height: 30px; 
+		  	text-align: center; 
+		  	font-size: 20px; 
+		  	letter-spacing:1px; 
+		  	color: #666; 
+			background:#ccc; 
+			margin:0;
+			padding: 0;
+		}
+		#send_info h2 img { 
+		  width: 30px;
+		  float: right; 
+		  position: relative; 
+		  top: 0px; 
+		  right:0px; 
+		  cursor: pointer; 
+		}
+		#send_info .show,#send_info .put { 
+		  font-size: 14px; 
+		  color: #666; 
+		  text-align: center;
+		}
+
+		#send_info .show{
+			height: 70%;
+		}
+		#send_info .put {
+			height: 20%;
+		}
+		#send_info .textarea{
+			border:none;
+			border-top:1px solid #000;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		#send_info .button { 
+			position: absolute;
+			bottom: 0;
+			right:0;
+		}
+		#send_info input.submit { 
+		  width: 80px; 
+		  height: 30px; 
+		  border: none;
+		  cursor: pointer;
+		}
+	</style>
+	<script>
+	//跨浏览器获取视口大小
+	function getInner(){
+		if(typeof window.innerWidth!='undefined'){
+			return{
+				width:window.innerWidth,
+				height:window.innerHeight
+			}
+		}else{
+			return{
+					width:document.documentElement.clientWidth,
+					height:document.documentElement.clientHeight
+				}
+			}
+		}
+		// 拖拽
+		function drag(){
+			var h2=document.getElementsByTagName('h2');
+			var disX = 0;
+            var disY = 0;
+            
+                h2[0].onmousedown = function(ev) {
+                    var oEvent = ev || event;
+                    disX = oEvent.clientX - send_info.offsetLeft;
+                    disY = oEvent.clientY - send_info.offsetTop;
+			
+                    document.onmousemove = function(ev) {
+
+                        var oEvent = ev || event;
+                        // 存储div当前的位置
+                        var left = oEvent.clientX - disX;
+                        var top = oEvent.clientY - disY;
+
+                        if (left < 0) {
+                            left = 0;
+                        } else if (left > getInner().width - send_info.offsetWidth) {
+                            left = getInner().width - send_info.offsetWidth;
+                        }
+
+                        if (top < 0) {
+                            top = 0;
+                        } else if (top > getInner().height - send_info.offsetHeight) {
+                            top = getInner().height - send_info.offsetHeight;
+                        }
+
+                        send_info.style.left = left + 'px';
+                        send_info.style.top = top + 'px';
+                    };
+
+                    document.onmouseup = function() {
+                        document.onmousemove = null;
+                        document.onmouseup = null;
+                    };
+                    return false; // 阻止默认事件,解决火狐的bug
+                };
+
+	}
+	window.onload=function(){
+		var send_info=document.getElementById('send_info');
+		var chat=document.getElementById('chat');
+		var close=document.getElementsByName('close')[0];
+		var show_chat=document.getElementById('show_chat');
+			
+			chat.onmouseover=function(){
+				show_chat.style.display='block';
+			}
+			chat.onmouseout=function(){
+				show_chat.style.display='none';
+			}
+			chat.onclick=function(){
+				send_info.style.display='block';
+			};
+			close.onclick=function(){
+				send_info.style.display='none';
+			};
+
+			drag();
+	}
+	
+	</script>
+<body>
+	<div id="chat">
+		<img src="chat.png" alt="">
+	</div>
+		<div id="show_chat">聊天</div>
+	<div id="send_info">
+				<h2><img src="close.png" alt="" class="close" name="close">聊天</h2> 
+				<div class="show"><div class="textarea"></div></div>
+				<div class="put"><textarea class="textarea"></textarea></div>
+				<div class="button "><input type="button" class="submit" value="发送"></div>
+	</div>
+</body>
+</html>
